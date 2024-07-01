@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import './styles/atom.css';
+@import './styles/whiteboard.css';
+@import './styles/tic-tac-toe.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	font-family: 'Poppins', sans-serif;
+}
+
+.App {
+	min-height: 100vh;
+	display: flex;
+	background-image: url('./images/background-img.webp');
+	background-position: center;
+	background-size: cover;
+}
+
+*::selection {
+	background-color: rgb(50, 174, 174);
+	color: white;
+}
+
+.chat-bg {
+	min-height: 100vh;
+	background-image: url('./images/background-img.webp');
+	background-position: center;
+	background-size: cover;
+}
+
+.w-full {
+	width: 100%;
+}
+
+::-webkit-scrollbar {
+	width: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: rgba(136, 136, 136, 0.281);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+
+.messages {
+	display: flex;
+	flex-direction: column;
+	overflow-y: scroll;
+	scrollbar-width: none;
+}
+
+label {
+	@apply text-gray-600;
+}
+
+.video {
+	@apply w-[300px] rounded-md;
+}
+
+.callerInfo {
+	@apply absolute text-center bottom-0 bg-black/40 w-full text-white rounded-b-md font-semibold text-[16px] py-1;
+}
