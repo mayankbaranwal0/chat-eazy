@@ -1,7 +1,7 @@
 {
 	"compilerOptions": {
 		"outDir": "./dist",
-    	"rootDir": "./server",
+    	"rootDir": ".",
 		"target": "es6",
 		"module": "commonjs",
 		"esModuleInterop": true,
@@ -10,5 +10,5 @@
 		"skipLibCheck": true,
 		"noImplicitAny": false
 	},
-	"include": ["server/**/*"]
+	"include": ["./**/*"]
 }
