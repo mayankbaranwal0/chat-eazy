@@ -3,10 +3,10 @@
 	"version": "1.0.0",
 	"description": "",
 	"main": "server.js",
-	"type": "module",
 	"scripts": {
-		"start": "node server.ts",
-		"dev": "nodemon server.ts"
+		"build": "tsc",
+    	"start": "node dist/server.js",
+    	"dev": "tsc && nodemon dist/server.js"
 	},
 	"keywords": [],
 	"author": "Mayank Baranwal",
