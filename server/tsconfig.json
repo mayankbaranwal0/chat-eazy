@@ -1,12 +1,14 @@
 {
 	"compilerOptions": {
-		"target": "es2016",
+		"outDir": "./dist",
+    	"rootDir": "./server",
+		"target": "es6",
 		"module": "commonjs",
 		"esModuleInterop": true,
 		"forceConsistentCasingInFileNames": false,
 		"strict": true,
 		"skipLibCheck": true,
-		"noImplicitAny": false,
-		"outDir": "./dist"
-	}
+		"noImplicitAny": false
+	},
+	"include": ["server/**/*"]
 }
